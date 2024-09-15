@@ -1,0 +1,216 @@
+body {
+  font-family: "Bigshot One", serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+.navbar .navbar-left,
+.navbar .navbar-right {
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.navbar .navbar-left a,
+.navbar .navbar-right a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+.navbar .navbar-left .logo,
+.navbar .navbar-right .logo {
+  width: 75px;
+  height: 25px;
+  margin-right: 20px;
+}
+.navbar .navbar-right .sign-in {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-right .sign-in .icon {
+  margin-right: 5px;
+}
+.navbar .navbar-right .divider {
+  margin: 0 10px;
+}
+.navbar .navbar-right .price {
+  margin-right: 15px;
+}
+.navbar .navbar-right .cart-icon {
+  width: 30px;
+}
+
+.header-bottom .delivery-info {
+  background-color: #000;
+  height: 70px;
+  align-content: center;
+}
+.header-bottom .delivery-info p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  word-spacing: 1px;
+}
+.header-bottom .delivery-info .changeordr-btn {
+  background-color: #000;
+  color: white;
+  border-color: white;
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+main {
+  padding: 20px;
+}
+main .addkart {
+  text-align: center;
+  padding: 50px 0;
+}
+main .addkart h1 {
+  font-size: 1.5rem;
+}
+main .addkart button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e4002b;
+  color: white;
+  cursor: pointer;
+}
+main .suggestions {
+  margin-top: 50px;
+}
+main .suggestions h2 {
+  font-size: 1.25rem;
+}
+main .suggestions .suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+main .suggestions .suggestion-item img {
+  height: 100px;
+}
+main .suggestions .suggestion-item .details h3 {
+  margin: 0;
+  font-size: 20px;
+}
+main .suggestions .suggestion-item .details p {
+  margin: 5px 0;
+}
+main .suggestions .suggestion-item .details button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #e4002b;
+  color: white;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #202124;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  padding-top: 20px;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .footer-container .footer-logo img {
+  height: 60px;
+  width: 60px;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+.footer .footer-container .footer-links {
+  display: flex;
+  gap: 40px;
+}
+.footer .footer-container .footer-links .column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.footer .footer-container .footer-links .column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-container .footer-links .column ul li {
+  margin-bottom: 5px;
+}
+.footer .footer-container .footer-links .column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer .footer-container .footer-links .column ul li a:hover {
+  color: #fff;
+}
+.footer .footer-container .footer-extras {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer .footer-container .footer-extras .social-links {
+  padding-top: 50px;
+}
+.footer .footer-container .footer-extras .social-links a img {
+  height: 30px;
+  width: 30px;
+}
+.footer .footer-container .footer-extras .flex1 {
+  display: flex;
+  margin-right: 50px;
+}
+.footer .footer-container .footer-extras .find-kfc {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 40px;
+  text-align: left;
+}
+.footer .footer-container .footer-extras .find-kfc img {
+  margin-right: 10px;
+}
+.footer .footer-container .footer-extras .app-links {
+  margin-right: 60px;
+}
+.footer .footer-bottom {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 50px;
+}
+.footer .footer-bottom p {
+  font-size: 14px;
+  text-align: center;
+}
+.footer .footer-bottom .social-links {
+  width: 100px;
+  margin-left: 500px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .option1, .navbar .option2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}/*# sourceMappingURL=kartstyle.css.map */

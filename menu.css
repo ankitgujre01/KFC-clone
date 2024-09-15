@@ -1,0 +1,358 @@
+body {
+  font-family: "Bigshot One", serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+.navbar .navbar-left,
+.navbar .navbar-right {
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.navbar .navbar-left a,
+.navbar .navbar-right a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+.navbar .navbar-left .logo,
+.navbar .navbar-right .logo {
+  width: 75px;
+  height: 25px;
+  margin-right: 20px;
+}
+.navbar .navbar-right .sign-in {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-right .sign-in .icon {
+  margin-right: 5px;
+}
+.navbar .navbar-right .divider {
+  margin: 0 10px;
+}
+.navbar .navbar-right .price {
+  margin-right: 15px;
+}
+.navbar .navbar-right .cart-icon {
+  width: 30px;
+}
+
+.header-bottom .delivery-info {
+  background-color: #000;
+  height: 70px;
+  align-content: center;
+}
+.header-bottom .delivery-info p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  word-spacing: 1px;
+}
+.header-bottom .delivery-info .changeordr-btn {
+  background-color: #000;
+  color: white;
+  border-color: white;
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.kfc-menu {
+  display: flex;
+}
+
+.sidebar {
+  height: 700px;
+  width: 290px;
+  max-width: 25%;
+  background-color: #fff;
+  padding-right: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+.sidebar h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  height: 60px;
+  width: 260px;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 15px;
+  -webkit-text-decoration: none solid rgb(73, 73, 73);
+          text-decoration: none solid rgb(73, 73, 73);
+  font-size: 16px;
+}
+
+.right-menu {
+  align-items: center;
+}
+.right-menu .right {
+  padding-top: 25px;
+  padding-left: 550px;
+  height: 30px;
+  width: 350px;
+}
+.right-menu .right #search {
+  border-radius: 50px;
+  height: 30px;
+  width: 150px;
+}
+
+.burger-fest {
+  text-align: center;
+  padding-left: 250px;
+}
+.burger-fest h2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  margin-right: 150px;
+}
+.burger-fest .burger-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.burger-fest .burger-container .burger-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 480px;
+  width: 270px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+}
+.burger-fest .burger-container .burger-card:hover {
+  transform: scale(1.1);
+}
+.burger-fest .burger-container .burger-card img {
+  width: 100%;
+  height: auto;
+}
+.burger-fest .burger-container .burger-card .burger-info {
+  padding: 1rem;
+}
+.burger-fest .burger-container .burger-card .burger-info h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.burger-fest .burger-container .burger-card .burger-info p span img {
+  height: 17px;
+  width: 16px;
+}
+.burger-fest .burger-container .burger-card .burger-info .non-veg {
+  color: red;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.burger-fest .burger-container .burger-card .burger-info .non-veg span {
+  margin-right: 0.5rem;
+}
+.burger-fest .burger-container .burger-card .burger-info .price {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+.burger-fest .burger-container .burger-card .burger-info p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem 0 1rem;
+}
+.burger-fest .burger-container .burger-card .burger-info .add-to-cart {
+  background-color: #e63946;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.burger-fest .burger-container .burger-card .burger-info .add-to-cart:hover {
+  background-color: #d62839;
+}
+.burger-fest .burger-container .burger-card .burger-info .add-to-cart span {
+  margin-left: 0.5rem;
+}
+.burger-fest .burger-container .burger-card .burger-info .add-to-cart span img {
+  height: 16px;
+  width: 17px;
+}
+
+.footer {
+  background-color: #202124;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  padding-top: 20px;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .footer-container .footer-logo img {
+  height: 60px;
+  width: 60px;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+.footer .footer-container .footer-links {
+  display: flex;
+  gap: 40px;
+}
+.footer .footer-container .footer-links .column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.footer .footer-container .footer-links .column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-container .footer-links .column ul li {
+  margin-bottom: 5px;
+}
+.footer .footer-container .footer-links .column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer .footer-container .footer-links .column ul li a:hover {
+  color: #fff;
+}
+.footer .footer-container .footer-extras {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer .footer-container .footer-extras .social-links {
+  padding-top: 50px;
+}
+.footer .footer-container .footer-extras .social-links a img {
+  height: 30px;
+  width: 30px;
+}
+.footer .footer-container .footer-extras .flex1 {
+  display: flex;
+  margin-right: 50px;
+}
+.footer .footer-container .footer-extras .find-kfc {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 40px;
+  text-align: left;
+}
+.footer .footer-container .footer-extras .find-kfc img {
+  margin-right: 10px;
+}
+.footer .footer-container .footer-extras .app-links {
+  margin-right: 60px;
+}
+.footer .footer-bottom {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 50px;
+}
+.footer .footer-bottom p {
+  font-size: 14px;
+  text-align: center;
+}
+.footer .footer-bottom .social-links {
+  width: 100px;
+  margin-left: 500px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .navbar-left,
+  .navbar .navbar-right {
+    padding: 10px 0;
+  }
+  .sidebar {
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .burger-fest {
+    padding-left: 50px;
+  }
+  .burger-fest h2 {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .burger-fest .burger-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-container .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .navbar-left,
+  .navbar .navbar-right {
+    padding: 10px 0;
+  }
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .burger-fest {
+    padding-left: 0;
+  }
+  .burger-fest h2 {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  .burger-fest .burger-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-container .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+.navbar .navbar-left,
+.navbar .navbar-right {
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.navbar .navbar-left a,
+.navbar .navbar-right a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+.navbar .navbar-left .logo,
+.navbar .navbar-right .logo {
+  width: 75px;
+  height: 25px;
+  margin-right: 20px;
+}
+.navbar .navbar-right .sign-in {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-right .sign-in .icon {
+  margin-right: 5px;
+}
+.navbar .navbar-right .divider {
+  margin: 0 10px;
+}
+.navbar .navbar-right .price {
+  margin-right: 15px;
+}
+.navbar .navbar-right .cart-icon {
+  width: 30px;
+}
+
+.headerBottom .delivery-info {
+  background-color: #000;
+  height: 70px;
+  align-content: center;
+}
+.headerBottom .delivery-info p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  word-spacing: 1px;
+}
+.headerBottom .delivery-info .changeordr-btn {
+  background-color: #000;
+  color: white;
+  border-color: white;
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.select-content .headline {
+  height: 25px;
+}
+.select-content p {
+  text-align: center;
+}
+.select-content .select-btns {
+  padding-left: 500px;
+}
+.select-content .select-btns .order-type {
+  width: 500px;
+  height: 50px;
+  background-color: #f2f2f2;
+  text-align: center;
+  align-content: center;
+  margin: 20px 0 10px 0px;
+  border-radius: 50px;
+}
+.select-content .select-btns .order-type #btn1 {
+  background-color: #e4002b;
+  color: white;
+  width: 160px;
+  height: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 50px;
+}
+.select-content .select-btns .order-type a {
+  padding: 10px 20px;
+  margin: 5px;
+  color: #494e52;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.promo img {
+  width: 100%;
+  display: block;
+}
+
+.categories {
+  padding: 20px;
+}
+.categories .category-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+}
+
+.offers-section {
+  background-color: #222;
+  color: #fff;
+  padding: 100px;
+  position: relative;
+}
+.offers-section .flex {
+  display: flex;
+}
+.offers-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  padding-left: 50px;
+  font-weight: 700;
+}
+.offers-section .view-all {
+  margin-top: 35px;
+  margin-left: 600px;
+  color: #fff;
+  text-decoration: none;
+}
+.offers-section .offers-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offers-section .offers-carousel .carousel-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px;
+}
+.offers-section .offers-carousel .offers {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+.offers-section .offers-carousel .offers .offer-card {
+  background-color: #fff;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  flex: none;
+}
+.offers-section .offers-carousel .offers .offer-card .offer-image {
+  position: relative;
+}
+.offers-section .offers-carousel .offers .offer-card .offer-image img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.offers-section .offers-carousel .offers .offer-card .offer-image .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.offers-section .offers-carousel .offers .offer-card .offer-details {
+  padding: 15px;
+}
+.offers-section .offers-carousel .offers .offer-card .offer-details h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.offers-section .offers-carousel .offers .offer-card .offer-details p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.offers-section .offers-carousel .offers .offer-card .offer-details .offer-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.offers-section .offers-carousel .offers .offer-card .offer-details .offer-actions .details {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+.offers-section .offers-carousel .offers .offer-card .offer-details .offer-actions .apply {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #202124;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .footer-container .footer-logo img {
+  height: 60px;
+  width: 60px;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+.footer .footer-container .footer-links {
+  display: flex;
+  gap: 40px;
+}
+.footer .footer-container .footer-links .column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.footer .footer-container .footer-links .column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-container .footer-links .column ul li {
+  margin-bottom: 5px;
+}
+.footer .footer-container .footer-links .column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer .footer-container .footer-links .column ul li a:hover {
+  color: #fff;
+}
+.footer .footer-container .footer-extras {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer .footer-container .footer-extras .social-links {
+  padding-top: 50px;
+}
+.footer .footer-container .footer-extras .social-links a img {
+  height: 30px;
+  width: 30px;
+}
+.footer .footer-container .footer-extras .flex1 {
+  display: flex;
+  margin-right: 50px;
+}
+.footer .footer-container .footer-extras .find-kfc {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 40px;
+  text-align: left;
+}
+.footer .footer-container .footer-extras .find-kfc img {
+  margin-right: 10px;
+}
+.footer .footer-container .footer-extras .app-links {
+  margin-right: 60px;
+}
+.footer .footer-bottom {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 50px;
+}
+.footer .footer-bottom p {
+  font-size: 14px;
+  text-align: center;
+}
+.footer .footer-bottom .social-links {
+  width: 100px;
+  margin-left: 500px;
+  margin-top: 10px;
+}/*# sourceMappingURL=kfs1style.css.map */

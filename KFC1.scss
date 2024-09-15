@@ -1,0 +1,363 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; // adjust as needed
+  background-color: #fff;
+
+  .navbar-left,
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    a {
+      margin: 0 15px; // adjust for spacing
+      text-decoration: none;
+      color: black;
+    }
+
+    .logo {
+      width: 75px;
+      height: 25px;
+      margin-right: 20px;
+    }
+  }
+
+  .navbar-right {
+    .sign-in {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin-right: 5px;
+      }
+    }
+
+    .divider {
+      margin: 0 10px;
+    }
+
+    .price {
+      margin-right: 15px;
+    }
+
+    .cart-icon {
+      width: 30px; // adjust as needed
+    }
+  }
+}
+
+.headerBottom .delivery-info {
+  background-color: #000;
+  height: 70px;
+  align-content: center;
+  p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    word-spacing: 1px;
+  }
+  .changeordr-btn {
+    background-color: #000;
+    color: white;
+    border-color: white;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+  }
+}
+
+.select-content {
+  .headline {
+    height: 25px;
+  }
+  p {
+    text-align: center;
+  }
+
+  .select-btns {
+    padding-left: 500px;
+    .order-type {
+      width: 500px;
+      height: 50px;
+      background-color: #f2f2f2;
+      text-align: center;
+      align-content: center;
+      // padding: 5px 5px 5px 5px;
+
+      margin: 20px 0 10px 0px;
+      border-radius: 50px;
+      #btn1 {
+        background-color: #e4002b;
+        color: white;
+        width: 160px;
+        height: 45px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 50px;
+      }
+
+      a {
+        padding: 10px 20px;
+        margin: 5px;
+        // background-color: #fff;
+        // border: 1px solid #e4002b;
+        color: #494e52;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.promo img {
+  width: 100%;
+  display: block;
+}
+
+.categories {
+  padding: 20px;
+
+  .category-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    // transition: transform 0.2s, box-shadow 0.2s;
+  }
+}
+
+// .offer{
+//   background-color: #000;
+//   color: white;
+// }
+
+.offers-section {
+  background-color: #222;
+  color: #fff;
+  padding: 100px;
+  position: relative;
+  .flex {
+    display: flex;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    padding-left: 50px;
+    font-weight: 700;
+  }
+
+  .view-all {
+    margin-top: 35px;
+    margin-left: 600px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .offers-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carousel-button {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+      margin: 0 10px;
+    }
+
+    .offers {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+
+      .offer-card {
+        background-color: #fff;
+        color: #222;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        flex: none;
+
+        .offer-image {
+          position: relative;
+          img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+          }
+
+          .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            color: #fff;
+            padding: 5px;
+            font-size: 14px;
+            border-radius: 4px;
+          }
+        }
+
+        .offer-details {
+          padding: 15px;
+
+          h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+
+          .offer-actions {
+            display: flex;
+            justify-content: space-between;
+
+            .details {
+              color: #222;
+              text-decoration: none;
+              font-weight: bold;
+            }
+
+            .apply {
+              background-color: #e74c3c;
+              color: #fff;
+              border: none;
+              padding: 8px 15px;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #202124;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .footer-logo img {
+      height: 60px;
+      width: 60px;
+      margin-top: 25px;
+      margin-left: 100px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 40px;
+
+      .column {
+        h4 {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 5px;
+
+            a {
+              color: #ccc;
+              text-decoration: none;
+
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-extras {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      .social-links {
+        padding-top: 50px;
+        a {
+          img {
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+      .flex1 {
+        display: flex;
+        margin-right: 50px;
+      }
+      .find-kfc {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-right: 40px;
+        text-align: left;
+        img {
+          margin-right: 10px;
+        }
+      }
+      .app-links {
+        margin-right: 60px;
+      }
+
+      // .app-links img,
+      // .social-links img {
+      //   width: 100px;
+      //   margin-right: 10px;
+      // }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 50px;
+
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+    .social-links {
+      width: 100px;
+      margin-left: 500px;
+      margin-top: 10px;
+    }
+  }
+}

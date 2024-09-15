@@ -1,0 +1,429 @@
+body {
+  font-family: "Bigshot One", serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+
+  .navbar-left,
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .logo {
+      width: 75px;
+      height: 25px;
+      margin-right: 20px;
+    }
+  }
+
+  .navbar-right {
+    .sign-in {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin-right: 5px;
+      }
+    }
+
+    .divider {
+      margin: 0 10px;
+    }
+
+    .price {
+      margin-right: 15px;
+    }
+
+    .cart-icon {
+      width: 30px;
+    }
+  }
+}
+
+.header-bottom .delivery-info {
+  background-color: #000;
+  height: 70px;
+  align-content: center;
+
+  p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    word-spacing: 1px;
+  }
+
+  .changeordr-btn {
+    background-color: #000;
+    color: white;
+    border-color: white;
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+  }
+}
+
+.kfc-menu {
+  display: flex;
+}
+
+.sidebar {
+  height: 700px;
+  width: 290px;
+  max-width: 25%;
+  background-color: #fff;
+  padding-right: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+
+  h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    height: 60px;
+    width: 260px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 15px;
+      text-decoration: none solid rgb(73, 73, 73);
+      font-size: 16px;
+    }
+  }
+}
+
+.right-menu {
+  align-items: center;
+
+  .right {
+    padding-top: 25px;
+    padding-left: 550px;
+    height: 30px;
+    width: 350px;
+
+    #search {
+      border-radius: 50px;
+      height: 30px;
+      width: 150px;
+    }
+  }
+}
+
+.burger-fest {
+  text-align: center;
+  padding-left: 250px;
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    margin-right: 150px;
+  }
+
+  .burger-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .burger-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 480px;
+      width: 270px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .burger-info {
+        padding: 1rem;
+
+        h3 {
+          font-size: 1.5rem;
+          margin: 0.5rem 0;
+        }
+
+        p {
+          span {
+            img {
+              height: 17px;
+              width: 16px;
+            }
+          }
+        }
+
+        .non-veg {
+          color: red;
+          font-weight: bold;
+          margin: 0.5rem 0;
+
+          span {
+            margin-right: 0.5rem;
+          }
+        }
+
+        .price {
+          font-size: 1.3rem;
+          margin: 0.5rem 0;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #666;
+          margin: 0.5rem 0 1rem;
+        }
+
+        .add-to-cart {
+          background-color: #e63946;
+          color: white;
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1rem;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #d62839;
+          }
+
+          span {
+            margin-left: 0.5rem;
+
+            img {
+              height: 16px;
+              width: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #202124;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  padding-top: 20px;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .footer-logo img {
+      height: 60px;
+      width: 60px;
+      margin-top: 25px;
+      margin-left: 100px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 40px;
+
+      .column {
+        h4 {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 5px;
+
+            a {
+              color: #ccc;
+              text-decoration: none;
+
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-extras {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      .social-links {
+        padding-top: 50px;
+
+        a {
+          img {
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+
+      .flex1 {
+        display: flex;
+        margin-right: 50px;
+      }
+
+      .find-kfc {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-right: 40px;
+        text-align: left;
+
+        img {
+          margin-right: 10px;
+        }
+      }
+
+      .app-links {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 50px;
+
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .social-links {
+      width: 100px;
+      margin-left: 500px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .navbar-left,
+    .navbar-right {
+      padding: 10px 0;
+    }
+  }
+
+  .sidebar {
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .burger-fest {
+    padding-left: 50px;
+
+    h2 {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+
+    .burger-container {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-container .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .navbar-left,
+    .navbar-right {
+      padding: 10px 0;
+    }
+  }
+
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .burger-fest {
+    padding-left: 0;
+
+    h2 {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
+    .burger-container {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-container .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
